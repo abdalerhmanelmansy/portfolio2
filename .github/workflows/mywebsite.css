@@ -1,0 +1,370 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing:border-box ;
+text-decoration: none;
+list-style:none;
+
+}
+html{
+scroll-behavior: smooth;
+}
+body{
+
+background-color: white;
+color: black;
+}
+.nav{
+    background-color: black;
+color: white;
+display:flex;
+flex-direction:row ;
+justify-content:space-between ;
+align-items: center;
+padding: 20px 6%;
+position: static;
+top: 0;
+z-index: 10000;
+}
+.nav h1{
+    font-size: 30px;
+}
+.nav  h1 span{
+color: gold;
+font-weight: 900;
+}
+.nav ul{
+    display: flex;
+ gap: 30px;
+}
+.nav ul  li a{
+color: rgb(255, 255, 235);
+font-size: 18px;
+transition: 0.3s;
+position: relative;
+}
+.nav ul li a::after{
+content: "";
+background-color: gold;
+width: 0;
+height: 3px;
+bottom:-8px;
+right: 0; 
+position: absolute;
+transition: 0.4s;
+}
+.nav ul li a:hover{
+color: gold;
+}
+.nav ul li a:hover::after{
+width: 100%;
+}
+.hero{
+    background:  linear-gradient(rgb(0, 0, 0, 0.85) , rgb(0, 0, 0,85));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 8%;
+    color: white;
+}
+.hero-content{
+max-width: 750px;
+}
+.small-title{
+color:aliceblue;
+font-size: 16px;
+font-weight: 20px;
+}
+.hero h1{
+font-size: 65px;
+margin: 20px 0 ;
+}
+.hero h1 span{
+    color:gold
+}
+.hero p {
+    color: white;
+    font-size: 15px;
+}
+.hero-buttons {
+display: flex;
+margin-top: 35px;
+}
+.main-btn,.outline-btn{
+padding: 14px 30px ;
+border-radius: 7px;
+transition: 0.4s;
+background-color: rgb(0, 0, 0); 
+}
+.main-btn{
+background-color: gold;
+color: white;
+margin-left: 10px;
+}
+.main-btn:hover{
+    background-color: rgb(5, 1, 1);
+}
+.outline-btn{
+border: 1px  solid gold;
+color: white;
+transition: 0.4s;
+
+}
+.outline-btn:hover{
+    background-color: gold;
+    color: white;
+
+}
+.about{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:100px 9% ;
+    height: 92vh;
+}
+.about-text{
+    max-width:600px ;
+}
+.about h2{
+font-size: 40px;
+margin:20px  0;
+
+
+}
+.about h2 span{
+color: gold;
+
+}
+.about p{
+margin-bottom: 20px;
+font-size: 18px;
+color:rgb(165, 83, 45);
+
+}
+.about-box{
+width: 400px;
+display:grid;
+grid-template-columns: repeat(2, auto);
+grid-template-rows: repeat(2, auto);
+gap: 15px;
+
+}
+.about-box div{
+background-color: rgb(8, 7, 5);
+color: rgb(255, 253, 253);
+padding: 30px;
+border-radius: 10px;
+text-align: center;
+transition: 0.3s;
+}
+.about-box div:hover{
+transform: translateY(-7px);
+
+}
+
+.about-box div:last-child{
+    grid-column:span 2;
+}
+.about-box h3{
+    color: gold;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.about-box p{
+ color: aliceblue;
+
+}
+
+.section{
+    background-color: white;
+    margin-bottom: 50px;
+}
+    .section-heading{
+        text-align: center;
+         margin-bottom: 50px;   
+    }
+    .section-heading h2{   
+
+        font-size: 40px;
+        margin: 15px 0 ;
+    }
+    .section-heading p{
+        color: #777;
+
+    }
+        .services-container{
+
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+             gab:25px
+             
+        }
+.services-card{
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: 0.4 ;
+   }
+.services-card:hover{
+    transform: translateY(-10px);
+    border-color: gold;
+    box-shadow: 0 10px 30px rgba(red, green, blue, alpha);
+}
+.icon{
+
+    width: 60px;
+    height: 60px;
+    background-color: #111;
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 25px;
+
+}
+.services-card p{
+    color: #777;
+    line-height: 1.0;
+    margin-bottom: 20px;
+}
+.services-card a{
+
+    color: #b08d00;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contact{
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    min-height: auto;
+    direction: rtl;
+}
+.contact .form{
+    
+    width: 50%;
+    flex: 1;
+}
+.contact.form .h2{
+    font-size: 40px;
+    margin: 15px 0;
+}
+.contact .form h2 span{
+ color: gold;
+
+    
+}
+.contact-discription{
+    color: #777;
+    margin-bottom: 30px;
+    line-height:1.8;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact input, .contact textarea{
+    width: 100%;
+     padding: 15px 12px;
+     font-size: 16px;
+     border: 1px solid #ddd;
+     border-radius: 7px;
+     outline: none;
+     transition: 0.3s;
+    
+}   
+.contact textarea{
+    resize: vertical;
+    min-height: 80px; 
+}
+.contact input:focus, .contact textarea:focus{
+
+    border-color: gold;
+  }
+#btn{
+   width: 200px; 
+    padding: 14px;
+    background-color: #111;
+    color: #eee;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+
+}
+.btn:hover{
+    background-color: gold;
+    color: #000;
+
+
+}
+.map{
+    width:50%;
+
+}
+
+
+
+.contact .map iframe {
+    width: 100%;
+    height: 400px;
+    filter: grayscale(50%);
+    border-radius: 15px; 
+}
+.contact .map iframe:hover{
+    filter:grayscale(0) ;
+}
+@media (max-width:900px){
+    .nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+.nav ul{
+gap: 20px;
+
+}
+.hero {
+    min-height: 75vh;
+    text-align: center;
+    justify-content: center;
+}
+.hero h1{
+    font-size: 45px;
+}
+.hero p{
+    font-size:16px; 
+}
+.hero-buttons{
+justify-content: center;
+
+
+}
+.about{
+    flex-direction: column;
+    text-align: center;
+
+}
+.about h2{
+    font-size: 40px;
+}
+.services-container{
+    grid-template-columns: auto;
+
+}
+.contact{
+    flex-direction: column;
+}
+.contact .form ,.contact .map{
+    width: 100%;
+
+}
+
